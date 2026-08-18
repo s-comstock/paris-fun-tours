@@ -1,0 +1,33 @@
+/* Not currently used on live website. Navigate to the global styles component to edit */
+
+.navbar_component.is-scrolled .menu_link,
+.navbar_component.is-scrolled .menu_dropdown-link {
+  color: var(--color-scheme--text-primary);
+}
+
+.navbar_component.is-active .navbar_menu-line.is-closed,
+.navbar_component.is-scrolled .navbar_menu-line.is-closed {
+  background: var(--color-scheme--text-primary);
+}
+
+@media (max-width: 991px) {
+
+  .navbar_component.is-scrolled,
+  .navbar_component.is-active {
+    background: var(--color-scheme--background-primary);
+  }
+
+  .navbar_component.is-scrolled .menu_component,
+  .navbar_component.is-active .menu_component {
+    background: var(--color-scheme--background-primary);
+  }
+}
+
+@media(min-width: 992px) {
+
+  .navbar_component.is-scrolled .menu_component {
+    background: var(--color-scheme--glass-background-primary);
+    border: 1px solid var(--color-scheme--border-primary);
+  }
+
+}
